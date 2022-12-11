@@ -43,7 +43,7 @@ def del_note():
         key = ui.list_notes.selectedItems()[0].text()
         del notes[key]
         ui.list_notes.clear()
-        ui.list_tag.clear()
+        ui.list_tags.clear()
         ui.field_text.clear()
         ui.list_notes.addItems(notes)
         with open('notes_data.json', 'w', encoding='utf-8') as file:
